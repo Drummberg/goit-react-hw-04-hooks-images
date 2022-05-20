@@ -1,14 +1,11 @@
-import PulseLoader from 'react-spinners/PulseLoader';
-
-const wrapperStyles = {
-  margin: 0,
-};
+import FadeLoader from 'react-spinners/FadeLoader';
+import { LoaderDiv } from './Loader.styled';
 
 const Loader = () => {
   return (
-    <div css={wrapperStyles}>
-      <PulseLoader margin={4} size={13} color={'#3f51b5'} />
-    </div>
+    <LoaderDiv>
+      <FadeLoader margin={4} size={13} color={'#F8E71C'} />
+    </LoaderDiv>
   );
 };
 
